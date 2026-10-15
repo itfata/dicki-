@@ -1062,6 +1062,125 @@ body {
   .flow-bg i { animation: none; }
 }
 
+/* Light blush theme. */
+:root {
+  --bg: #fff7fb;
+  --bg-soft: #ffe7f1;
+  --panel: rgba(255, 255, 255, 0.76);
+  --panel-strong: rgba(255, 255, 255, 0.92);
+  --text: #35101f;
+  --muted: #765166;
+  --line: rgba(126, 37, 76, 0.16);
+  --shadow: 0 22px 60px rgba(116, 31, 70, 0.14);
+}
+
+body {
+  color: var(--text);
+  background:
+    radial-gradient(circle at 12% 7%, rgba(255, 179, 213, 0.5), transparent 28%),
+    radial-gradient(circle at 88% 18%, rgba(255, 101, 169, 0.22), transparent 25%),
+    radial-gradient(circle at 24% 70%, rgba(255, 206, 229, 0.55), transparent 31%),
+    linear-gradient(180deg, #fffafd 0%, #fff0f6 48%, #ffe5f0 100%);
+}
+
+.hero__subtitle,
+.hero__microcopy,
+.hero__lead,
+.gallery-grid__text p,
+.story__content p,
+.video-section__grid p,
+.delivery__content p,
+.order__content p,
+.review-form-card p,
+.sticky-cta span {
+  color: var(--muted);
+}
+
+.offer-card,
+.countdown-card,
+.hero-card,
+.feature-card,
+.rating-box,
+.review-card,
+.review-form-card,
+.order-form,
+.story__checks,
+.delivery__list,
+.gallery-note,
+.sticky-cta {
+  background: rgba(255, 255, 255, 0.78);
+  border-color: rgba(126, 37, 76, 0.16);
+  box-shadow: var(--shadow);
+}
+
+.promo-banner,
+.gift-card,
+.anon-strip {
+  background: rgba(255, 255, 255, 0.88);
+  color: var(--text);
+  border-color: rgba(255, 45, 122, 0.42);
+  box-shadow: 0 14px 34px rgba(136, 33, 77, 0.12);
+}
+
+.promo-banner__text,
+.gift-card__desc,
+.countdown-card__title,
+.review-card p,
+.gallery-note p,
+.gallery-note li,
+.story__checks div,
+.delivery__list div,
+.order-form small,
+.sticky-cta strong {
+  color: var(--text);
+}
+
+.price--new {
+  color: var(--text);
+}
+
+.price--old,
+.gift-card__prices span {
+  color: rgba(53, 16, 31, 0.5);
+}
+
+.badge,
+.stock-pill {
+  color: #56162f;
+  background: rgba(255, 255, 255, 0.72);
+  border-color: rgba(197, 62, 119, 0.24);
+}
+
+.countdown__item {
+  color: #fff;
+  background: linear-gradient(145deg, #8b274f, #51152e);
+}
+
+.countdown__item small {
+  color: #ffe0ec;
+}
+
+.review-form input,
+.review-form textarea,
+.order-form input,
+.order-form textarea {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.88);
+  border-color: rgba(126, 37, 76, 0.2);
+}
+
+.review-form input::placeholder,
+.review-form textarea::placeholder,
+.order-form input::placeholder,
+.order-form textarea::placeholder {
+  color: rgba(53, 16, 31, 0.48);
+}
+
+.flow-bg i {
+  opacity: 0.52;
+  filter: blur(44px);
+}
+
 /* Mobile-first landing tuning */
 body {
   overflow-x: hidden;
